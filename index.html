@@ -1,85 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zaynab Khan | Web Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zainab Hussain - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Zainab</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Navigation -->
-  <nav>
-   Portfolio 
-  </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Zainab Hussain</span>
+                        <span class="role">Frontend Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate web developer specializing in creating beautiful, responsive, and user-friendly websites. 
+                        I bring ideas to life through clean code and stunning design.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" data-delay="0">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="floating-icon" data-delay="1">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="floating-icon" data-delay="2">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-icon" data-delay="3">
+                                <i class="fab fa-react"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-animation">
+            <div class="bg-shape shape-1"></div>
+            <div class="bg-shape shape-2"></div>
+            <div class="bg-shape shape-3"></div>
+        </div>
+    </section>
 
-  <!-- Header Section -->
-  <header id="home">
-    <div class="intro-text">
-      <h1>Hi, I'm Zainab,<br />A passionate web developer</h1>
-      <p class="tagline">I specialize in building beautiful, fast and user-friendly websites.</p>
-    </div>
-    <div class="developer-image">
-      <img src="Best Software Development Company in India _ Slash Star.jpeg" alt="Zainab the Web Developer" />
-    </div>
-  </header>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and journey</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>My Journey</h3>
+                        <p>
+                        Hello! I'm Zainab Hussain
+                        , a passionate and detail 
+                    oriented web developer with a strong foundation in front-end technologies and a growing expertise in back-end systems. I enjoy building clean, user-friendly websites and interactive web applications that blend creativity with functionality.
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Services</h2>
-    <div class="service-card">
-      <h3>Responsive Web Design</h3>
-      <p>Modern, clean, mobile-friendly design for all devices.</p>
-    </div>
-    <div class="service-card">
-      <h3>Front-End Development</h3>
-      <p>HTML, CSS, JavaScript and more — interactive UIs done right.</p>
-    </div>
-    <div class="service-card">
-      <h3>UI/UX Enhancements</h3>
-      <p>Adding life to your site with animation, transitions, and custom effects.</p>
-    </div>
-  </section>
+With a background in engineering and a deep interest in modern tech stacks, I focus on creating responsive, accessible, and performance
+driven solutions. Whether it's designing elegant interfaces or solving complex problems behind the scenes, I love bringing ideas to life through code.
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>A1 Uniforms</h3>
-      <p>Crafted a sleek and modern front-end for a uniform brand that reflects professionalism, trust, and style.</p>
-    </div>
-    <div class="project-card">
-      <h3>Courier Management</h3>
-      <p>Designed an efficient and intuitive courier tracking UI, enhancing real-time delivery monitoring and user satisfaction.</p>
-    </div>
-    <div class="project-card">
-      <h3>Laptop UI Showcase</h3>
-      <p>Built a clean front-end showcasing latest laptops with a focus on UI clarity and product experience.</p>
-    </div>
-  </section>
+I'm always learning, evolving, and looking for new opportunities to grow  both as a developer and as a creative thinker. Let's build something incredible together.
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>Software Engineering</h3>
-      <p>Aptech, 2023 - 2026</p>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="project-card">
-      <h3>Email</h3>
-      <p><a href="mailto:zainabkha794@gmail.com">zainabkha794@gmail.com</a></p>
-    </div>
-    <div class="project-card">
-      <h3>LinkedIn</h3>
-      <p><a href="https://www.linkedin.com/in/zainab-hussain-19b24a351" target="_blank">linkedin.com/in/zainab-hussain</a></p>
-    </div>
-  </section>
+                        </p>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Education</h4>
+                                <p><strong>3-Year Diploma from Aptech</strong> (Ongoing)</p>
+                                <p>Comprehensive web development program covering modern technologies and best practices</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Additional Training</h4>
+                                <p><strong>3-Month Graphic Design Course</strong></p>
+                                <p>Enhanced my design skills to create visually appealing and user-friendly interfaces</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Academic Background</h4>
+                                <p><strong>Intermediate in Commerce</strong> (Completed)</p>
+                                <p>Strong foundation in business principles and analytical thinking</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Professional Experience</h4>
+                                <p><strong>3-Month Internship at TechHorizon</strong></p>
+                                <p>Frontend Developer - Gained hands-on experience in real-world projects and team collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Laravel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Others</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Graphic Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Responsive Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">A1 Uniform Website</h3>
+                        <p class="project-description">
+                            A comprehensive e-commerce platform for uniform sales featuring product catalog, 
+                            shopping cart functionality, and responsive design for optimal user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="project-overlay">
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Courier Management System</h3>
+                        <p class="project-description">
+                            A full-featured courier management system built with Laravel, providing tracking, 
+                            order management, and real-time status updates for efficient delivery operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="project-overlay">
+                          
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Laptop E-commerce Website</h3>
+                        <p class="project-description">
+                            Modern e-commerce platform for laptop sales with advanced filtering, comparison features, 
+                            and secure payment integration for seamless shopping experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="project-overlay">
+                            
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">School Management System</h3>
+                        <p class="project-description">
+                            Comprehensive school management platform handling student records, attendance tracking, 
+                            grade management, and communication between teachers, students, and parents.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project or collaboration</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>zainabkha794@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+92 3272696072</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/zainab-hussain-19b24a351/
+                        " class="social-link linkedin" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com/_iamzainabhussain?igsh=czFjcXpoZzB2Nmhp&utm_source=qr
+                        " class="social-link instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="form-error" id="nameError"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="form-error" id="emailError"></div>
+                        </div>
+                      
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-error" id="messageError"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader">
+                                <i class="fas fa-spinner"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                   
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
